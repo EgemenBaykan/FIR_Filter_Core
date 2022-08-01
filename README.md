@@ -1,6 +1,8 @@
 <h2><b>Reconfigurable FIR Filter</b></h2>
 
-A reconfigurable Finite Impulse Response (FIR) Filter core for Field Programmable Gate Arrays (FPGA) is written in Verilog Language. Testbench is written in SystemVerilog and will be updated in upcoming updates. <br>
+A reconfigurable Finite Impulse Response (FIR) Filter core for Field Programmable Gate Arrays (FPGA) iseam interfaces will be added.
+Mapped Memory will consist 1 control/status register
+Coefficients will be writt written in Verilog Language. Testbench is written in SystemVerilog and will be updated in upcoming updates. <br>
 
 FIR Filter is a popular Digital Signal Processing (DSP) application. It is a digital filter that has finite impulse response which means duration is finite. Every input value is multiplied by defined filter coefficients and buffered before driven through the output.<br>
 
@@ -52,7 +54,11 @@ A file named "FIR_Filter.vcd" will be created into your directory consisting sim
 
 <h3>Upcoming Updates<h3>
 
-
+<ul>
+    <li>AXI-Lite and AXI-Stream interfaces will be added.</li>
+    <li>Mapped Memory will consist 1 control/status register.</li>
+    <li>Coefficients will be written to AXI-Lite mapped memory.</li>
+</ul>
 
 
 
