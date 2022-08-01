@@ -11,7 +11,7 @@ Filter coefficients can be obtained and filter specifications can be visualised 
 | Port Name  | Width | Description |
 | :-----------: | :------------: | :------------: |
 | CLK  | 1 bit  | Clock Input. |
-| areset_n  | Asynchronous Reset (N)  | Negative reset input.|
+| areset_n  | 1 bit  | Asynchronous negative reset.|
 | en_FIR  | 1 bit  | Enable filtering. |
 | tap_Transfer  | 1 bit  | Load filter coefficients. |
 | tap_Index  | 4 bits  | Index of tap. |
