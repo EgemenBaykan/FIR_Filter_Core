@@ -40,8 +40,8 @@ A finite state machine (FSM) is used to load filter coefficients inside FIR Filt
 FIR Filter core is tested in Icarus Verilog and testbench outputs are observed on GTKWave. In order to run the testbench in Icarus Verilog run following commands in your terminal.<br>
 
 ```
-> iverilog -o FIR_Filter.vvp FIR_Filter_Core_TB.sv
-> vvp FIR_Filter.vvp
+$ iverilog -o FIR_Filter.vvp FIR_Filter_Core_TB.sv
+$ vvp FIR_Filter.vvp
 ```
 
 A file named "FIR_Filter.vcd" will be created into your directory consisting simulation outputs. This file can be opened using GTKWave. Simulation output is shown in following figure.<br>
