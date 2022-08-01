@@ -52,11 +52,7 @@ A file named "FIR_Filter.vcd" will be created into your directory consisting sim
 
 <h3>Upcoming Updates<h3>
 
-<ul>
-    <li>AXI-Lite and AXI-Stream interfaces will be added.</li>
-    <li>Mapped Memory will consist 1 control/status register</li>
-    <li>Coefficients will be written to AXI-Lite mapped memory.</li>
-</ul>
+
 
 
 
