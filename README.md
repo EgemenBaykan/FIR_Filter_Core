@@ -19,15 +19,15 @@ Filter coefficients can be obtained and filter specifications can be visualised 
 | i_Data  | 32 bits  | Filter input. |
 | o_Data  | 64 bits  | Filter output. |
 
-
-<b>areset_n</b> is always <b>HIGH</b>. When it is <b>LOW</b>, core gets a reset.<br>
-<b>en_FIR</b> input must be <b>HIGH</b> for incoming data gets filtered at output.<br>
-<b>tap_Transfer</b> input must be <b>HIGH</b> if filter coefficients are getting updated.<br>
-<b>tap_Index</b> points coefficient order while writing coefficients into core.<br>
-<b>tap_Value</b> is coefficient value to write into core. Fixed point values are written.<br>
-<b>i_Data</b> input is connected to slave AXI-Stream interface. 32 bits of data stream read at this port.<br>
-<b>o_Data</b> output is connected to master AXI-Stream interface. 64 bits of data stream is written to this port. 32 bits input data is processed as 64 bits data since arithmatic operations(multiplication) held in core.<br>
-
+<ul>
+    <li><b>areset_n</b> is always <b>HIGH</b>. When it is <b>LOW</b>, core gets a reset.</li>
+    <li><b>en_FIR</b> input must be <b>HIGH</b> for incoming data gets filtered at output.</li>
+    <li><b>tap_Transfer</b> input must be <b>HIGH</b> if filter coefficients are getting updated.</li>
+    <li><b>tap_Index</b> points coefficient order while writing coefficients into core.</li>
+    <li><b>tap_Value</b> is coefficient value to write into core. Fixed point values are written.</li>
+    <li><b>i_Data</b> input is connected to slave AXI-Stream interface. 32 bits of data stream read at this port.</li>
+    <li><b>o_Data</b> output is connected to master AXI-Stream interface. 64 bits of data stream is written to this port. 32 bits input data is processed as 64 bits data since arithmatic operations(multiplication) held in core.</li>
+</ul>
 
 <h2><b>Load Filter Coefficients</b></h2>
 
@@ -40,8 +40,8 @@ A finite state machine (FSM) is used to load filter coefficients inside FIR Filt
 FIR Filter core is tested in Icarus Verilog and testbench outputs are observed on GTKWave. In order to run the testbench in Icarus Verilog run following commands in your terminal.<br>
 
 ```
-$ iverilog -o FIR_Filter.vvp FIR_Filter_Core_TB.sv
-$ vvp FIR_Filter.vvp
+> iverilog -o FIR_Filter.vvp FIR_Filter_Core_TB.sv
+> vvp FIR_Filter.vvp
 ```
 
 A file named "FIR_Filter.vcd" will be created into your directory consisting simulation outputs. This file can be opened using GTKWave. Simulation output is shown in following figure.<br>
@@ -50,7 +50,7 @@ A file named "FIR_Filter.vcd" will be created into your directory consisting sim
 
 <br><br><br>
 
-<h3><b>Upcoming Updates</b><h3>
+<h3><b>Upcoming Updates</b></h3>
 
 <p>
 <ol>
