@@ -26,7 +26,7 @@ Filter coefficients can be obtained and filter specifications can be visualised 
     <li><b>tap_Index</b> points coefficient order while writing coefficients into core.</li>
     <li><b>tap_Value</b> is coefficient value to write into core. Fixed point values are written.</li>
     <li><b>i_Data</b> input is connected to slave AXI-Stream interface. 32 bits of data stream read at this port.</li>
-    <li><b>o_Data</b> output is connected to master AXI-Stream interface. 64 bits of data stream is written to this port. 32 bits input data is processed as 64 bits data since arithmatic operations(multiplication) held in core.</li>
+    <li><b>o_Data</b> output is connected to master AXI-Stream interface. 64 bits of data stream is written to this port. 32 bits input data is processed as 64 bits data at output since arithmatic operations(multiplication) held in core.</li>
 </ul>
 
 <h2><b>Load Filter Coefficients</b></h2>
