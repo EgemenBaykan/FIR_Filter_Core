@@ -2,8 +2,8 @@ module FIR_Filter_Core(
     input wire CLK,
     input wire areset_n,
     input wire en_FIR,
-    input wire signed tap_Transfer,
-    input wire signed [3:0] tap_Index,
+    input wire tap_Transfer,
+    input wire [3:0] tap_Index,
     input wire signed [31:0] tap_Value,
     input wire signed [31:0] i_Data,
     output reg signed [63:0] o_Data
