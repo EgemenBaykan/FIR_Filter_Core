@@ -25,7 +25,7 @@ module FIR_Filter_Core_TB();
         .i_Data(i_Data),
         .tap_Transfer(tap_Transfer),
         .tap_Index(tap_Index),
-        .tap_Data(tap_Data),
+        .tap_Value(tap_Data),
         .o_Data(o_Data)
     );
 
